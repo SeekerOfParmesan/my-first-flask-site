@@ -12,6 +12,19 @@ app = Flask(
 def index():
   return render_template('index.html')
 
+
+#trollos
+@app.route('/admin/<string:name>/')
+def admin(name):
+  return render_template('trolled.html', name=name)
+
+#client
+@app.route('/client/<string:username>/')
+def client(username):
+  return render_template('client.html', username=username)
+
+
+
 if __name__ == '__main__':
   # Run the Flask app
   app.run(
