@@ -24,6 +24,19 @@ def client(username):
   return render_template('client.html', username=username)
 
 
+#legends
+legends = ['Bloodhound','Gibraltar','Lifeline','Pathfinder','Wraith','Bangalore','Caustic','Mirage','Octane','Wattson','Crypto','Revenant','Loba','Rampart','Horizon','Fuse','Valkyrie','Seer']
+@app.route('/info/legends/')
+def leg_ends():
+  return render_template('legends.html', legends=legends)
+
+#guns
+gun_go_brr = ['R301','P2020']
+@app.route('/info/guns/')
+def guns():
+  return render_template('guns.html',gun_go_brr=gun_go_brr)
+
+
 
 if __name__ == '__main__':
   # Run the Flask app
