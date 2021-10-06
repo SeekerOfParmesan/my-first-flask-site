@@ -1,4 +1,4 @@
-from flask import Flask, render_template
+from flask import Flask, render_template, request
 
 # Create a flask app
 app = Flask(
@@ -35,6 +35,20 @@ gun_go_brr = ['R301','P2020']
 @app.route('/info/guns/')
 def guns():
   return render_template('guns.html',gun_go_brr=gun_go_brr)
+
+main_legend = []
+
+@app.route('/info/legends/mains/', methods=['POST'])
+def mains():
+  print("request ", request.form)
+  main = request.form["main"]
+  main_legend.append(main)
+
+  return render_template('legend_main.html',
+  main_legend = main_legend)
+
+
+
 
 
 
