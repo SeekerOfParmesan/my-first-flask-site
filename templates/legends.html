@@ -13,61 +13,26 @@
     <br>
     The legends up to this season are:
     <br>
-    {%for legend in legends%}
+    <table border="1px">
+      <tr>
+        <td>Legend</td>
+        <td>Season added</td>
+      </tr>
 
-      {{legend}},
+      {%for element in all%}
 
-    {%endfor%}
-    <br>
-    Further info in the table bolow
+        <tr>
+          <td>{{element[0]}}</td>
+          <td>{{element[1]}}</td>
+        </tr>
+
+
+      {%endfor%}
+      </table>
+      <br>
+   
   </p>
-  <table border="1px">
-  <tr>
-    <td>Legend</td>
-    <td>Season added</td>
-    <td>Image</td>
-  </tr>
-  <tr>
-    <td>Bloodhound</td>
-    <td>Season 0</td>  
-    <td><img src="https://gamepedia.cursecdn.com/apexlegends_gamepedia_en/thumb/9/9e/Bloodhound_Icon.png/134px-Bloodhound_Icon.png?version=ae1e539a30d05b736bb5f9b98eb06ad6" height="100px"></td>  
-  </tr>
-  <tr>
-    <td>Gibraltar</td>
-    <td>Season 0</td>  
-    <td><img src="https://obj-sg.thewiki.kr/data/617065782d677269642d74696c652d6c6567656e64732d67696272616c7461725f76322e706e67.png" height="100px"></td>  
-  </tr>
-  <tr>
-    <td>Lifeline</td>
-    <td>Season 0</td>  
-    <td><img src="https://gamepedia.cursecdn.com/apexlegends_gamepedia_en/thumb/7/75/Lifeline_Icon.png/134px-Lifeline_Icon.png?version=3c5f1c5550501569b90cd84950a32580" height="100px"></td>  
-  </tr>
-  <tr>
-    <td>Pathfinder</td>
-    <td>Season 0</td>  
-    <td><img src="https://gamepedia.cursecdn.com/apexlegends_gamepedia_en/thumb/c/c4/Pathfinder_Icon.png/134px-Pathfinder_Icon.png?version=7ca5960a5595274092a32123ec31274f" height="100px"></td>  
-  </tr>
-  <tr>
-    <td>Wraith</td>
-    <td>Season 0</td>  
-    <td><img src="https://gamepedia.cursecdn.com/apexlegends_gamepedia_en/thumb/6/65/Wraith_Icon.png/134px-Wraith_Icon.png?version=c2005aa9a344fd2faaa41c6c001c5a8d" height="100px"></td>  
-  </tr>
-  <tr>
-    <td>Bangalore</td>
-    <td>Season 0</td>  
-    <td><img src="https://gamepedia.cursecdn.com/apexlegends_gamepedia_en/d/dc/Bangalore_Icon.png" height="100px"></td>  
-  </tr>
-  <tr>
-    <td>Caustic</td>
-    <td>Season 0</td>  
-    <td><img src="https://obj-sg.thewiki.kr/data/617065782d677269642d74696c652d6c6567656e64732d636175737469635f76322e706e67.png" height="100px"></td>  
-  </tr>
-  <tr>
-    <td>Mirage</td>
-    <td>Season 0</td>  
-    <td><img src="https://gamepedia.cursecdn.com/apexlegends_gamepedia_en/thumb/4/44/Mirage_Icon.png/134px-Mirage_Icon.png?version=2bcf65c176193e22ec53e2038622d067" height="100px"></td>  
-  </tr>  
-  </table>
+  
   <form action="/info/legends/mains/" method='POST'>
       <div>
         <label for="username">Username:</label>

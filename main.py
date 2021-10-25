@@ -1,5 +1,4 @@
 from flask import Flask, render_template, request
-
 # Create a flask app
 app = Flask(
   __name__,
@@ -25,10 +24,38 @@ def client(username):
 
 
 #legends
-legends = ['Bloodhound','Gibraltar','Lifeline','Pathfinder','Wraith','Bangalore','Caustic','Mirage','Octane','Wattson','Crypto','Revenant','Loba','Rampart','Horizon','Fuse','Valkyrie','Seer']
+all = [
+  ['Bloodhound', 'Season 0'],
+  ['Gibraltar', 'Season 0'],
+  ['Lifeline', 'Season 0'],
+  ['Pathfinder', 'Season 0'],
+  ['Wraith', 'Season 0'],
+  ['Bangalore', 'Season 0'],
+  ['Caustic', 'Season 0'],
+  ['Mirage', 'Season 0'],
+  ['Octane', 'Season 1'],
+  ['Wattson', 'Season 2'],
+  ['Crypto', 'Season 3'],
+  ['Revenant', 'Season 4'],
+  ['Loba', 'Season 5'],
+  ['Rampart', 'Season 6'],
+  ['Horizon', 'Season 7'],
+  ['Fuse', 'Season 8'],
+  ['Valkyrie', 'Season 9'],
+  ['Seer', 'Season 10'],
+  ['Ash', 'Season 11']
+
+
+]
+
+
+# legends = ['Bloodhound','Gibraltar','Lifeline','Pathfinder','Wraith','Bangalore','Caustic','Mirage','Octane','Wattson','Crypto','Revenant','Loba','Rampart','Horizon','Fuse','Valkyrie','Seer']
+# seasons = ['Season 0','Season 0','Season 0','Season 0','Season 0','Season 0','Season 0','Season 0','Season 1','Season 2','Season 3','Season 4','Season 5','Season 6','Season 7','Season 8','Season 9','Season 10']
+
+
 @app.route('/info/legends/')
 def leg_ends():
-  return render_template('legends.html', legends=legends)
+  return render_template('legends.html', all=all)
 
 #guns
 gun_go_brr = ['R301','P2020']
@@ -46,6 +73,13 @@ def mains():
 
   return render_template('legend_main.html',
   main_legend = main_legend)
+
+
+
+
+
+
+
 
 
 
