@@ -57,30 +57,30 @@ all = [
   ['R-301 carbine', 'Light ammo', 'R201'],
   ['P2020', 'Light ammo', 'P2019'],
   ['RE-45 auto', 'Light ammo', 'RE-45'],
-  ['R-99', 'Light ammo', 'R-97']
-  ['G7 scout', 'Light ammo', 'G7 scout']
-  ['Alternator', 'Carepackage(Light ammo)', 'Alternator']
-  ['VK-47 flatline', 'Heavy ammo', 'VK-47 flatline']
-  ['Rampage', 'Heavy ammo', 'N.A']
-  ['Prowler burst PDW', 'Heavy ammo', 'N.A']
-  ['Hemlok burst AR', 'Heavy ammo', 'Hemlok burst AR']
-  ['Wingman', 'Heavy ammo', 'Wingman']
-  ['30-30 Repeater', 'Heavy ammo', 'N.A']
-  ['M600 Spitfire', 'Carepackage(Heavy ammo)', 'M600 Spitfire']
-  ['Bocek compound bow', 'Arrows', 'N.A']
-  ['HAVOC Rifle', 'Energy ammo', 'N.A']
-  ['Devotion LMG', 'Energy ammo', 'Devotion LMG']
-  ['Volt SMG', 'Energy ammo', 'Volt SMG']
-  ['L-STAR EMG', 'Energy ammo', 'L-STAR EMG']
-  ['Triple Take', 'Carepackage(Energy ammo)', 'Double Take']
-  ['EVA-8 Auto', 'Shotgun ammo', 'EVA-8 Auto']
-  ['Mastiff Shotgun', 'Shotgun ammo', 'Mastiff Shotgun']
-  ['Mozambique Shotgun', 'Shotgun ammo', 'Mozambique Shotgun']
-  ['Peacekeaper', 'Shotgun ammo', 'N.A']
-  ['Charge Rifle', 'Sniper ammo', 'Charge Rifle']
-  ['Longbow DMR', 'Sniper ammo', 'DMR']
-  ['Sentinel', 'Sniper ammo', 'N.A']
-  ['Kraber .50 cal', 'Carepackage(Sniper)', 'Kraber']
+  ['R-99', 'Light ammo', 'R-97'],
+  ['G7 scout', 'Light ammo', 'G7 scout'],
+  ['Alternator', 'Carepackage(Light ammo)', 'Alternator'],
+  ['VK-47 flatline', 'Heavy ammo', 'VK-47 flatline'],
+  ['Rampage', 'Heavy ammo', 'N.A'],
+  ['Prowler burst PDW', 'Heavy ammo', 'N.A'],
+  ['Hemlok burst AR', 'Heavy ammo', 'Hemlok burst AR'],
+  ['Wingman', 'Heavy ammo', 'Wingman'],
+  ['30-30 Repeater', 'Heavy ammo', 'N.A'],
+  ['M600 Spitfire', 'Carepackage(Heavy ammo)', 'M600 Spitfire'],
+  ['Bocek compound bow', 'Arrows', 'N.A'],
+  ['HAVOC Rifle', 'Energy ammo', 'N.A'],
+  ['Devotion LMG', 'Energy ammo', 'Devotion LMG'],
+  ['Volt SMG', 'Energy ammo', 'Volt SMG'],
+  ['L-STAR EMG', 'Energy ammo', 'L-STAR EMG'],
+  ['Triple Take', 'Carepackage(Energy ammo)', 'Double Take'],
+  ['EVA-8 Auto', 'Shotgun ammo', 'EVA-8 Auto'],
+  ['Mastiff Shotgun', 'Shotgun ammo', 'Mastiff Shotgun'],
+  ['Mozambique Shotgun', 'Shotgun ammo', 'Mozambique Shotgun'],
+  ['Peacekeaper', 'Shotgun ammo', 'N.A'],
+  ['Charge Rifle', 'Sniper ammo', 'Charge Rifle'],
+  ['Longbow DMR', 'Sniper ammo', 'DMR'],
+  ['Sentinel', 'Sniper ammo', 'N.A'],
+  ['Kraber .50 cal', 'Carepackage(Sniper)', 'Kraber'],
 ]
 @app.route('/info/guns/')
 def guns():
