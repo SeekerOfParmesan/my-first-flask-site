@@ -24,8 +24,9 @@ def client(username):
 
 
 #legends
-all = [
-  ['Bloodhound', 'Season 0'],
+all_legends = [
+  ['Bloodhound', 'Season 0',"https://kraber.herokuapp.com/info/legends/Bloodhound/"],
+  ['Bloodhound', 'Season 0',''],
   ['Gibraltar', 'Season 0'],
   ['Lifeline', 'Season 0'],
   ['Pathfinder', 'Season 0'],
@@ -50,10 +51,10 @@ all = [
 
 @app.route('/info/legends/')
 def leg_ends():
-  return render_template('legends.html', all=all)
+  return render_template('legends.html', all_legends=all_legends)
 
 #guns
-all = [
+all_guns = [
   ['R-301 carbine', 'Light ammo', 'R201'],
   ['P2020', 'Light ammo', 'P2019'],
   ['RE-45 auto', 'Light ammo', 'RE-45'],
@@ -84,7 +85,7 @@ all = [
 ]
 @app.route('/info/guns/')
 def guns():
-  return render_template('guns.html', all=all)
+  return render_template('guns.html', all_guns=all_guns)
 
 main_legend = []
 
@@ -96,6 +97,10 @@ def mains():
 
   return render_template('legend_main.html',
   main_legend = main_legend)
+
+@app.route('/info/legends/Bloodhound/')
+def Blood():
+  return render_template('blood.html')
 
 
 if __name__ == '__main__':
