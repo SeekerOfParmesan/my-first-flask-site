@@ -4,19 +4,25 @@
   <link href="/static/style.css" rel="stylesheet" type="text/css">
 </head>
 <body>
-   
-  </tr>
+  
   <p>
-    <br>
-    <br>    
-    <br>    
-    <br>
     Some of the guns up to this season are:
-    <br>
-    {%for gun in gun_go_brr%}
+    <br>  
+    </p>
+    <table border="1px">
+      <tr>
+        <td>Gun</td>
+        <td>Ammo type</td>
+        <td>Titanfall 2 counterpart</td>
+      </tr>
 
-      {{gun}},
+      {%for element in all%}
+      <tr>
+        <td>{{element[0]}}</td>
+        <td>{{element[1]}}</td>
+        <td>{{element[2]}}</td>
+      </tr>
 
-    {%endfor%}
-  </p>
+      {%endfor%}
+      </table>
 </body>
