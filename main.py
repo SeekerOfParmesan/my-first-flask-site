@@ -26,10 +26,9 @@ def client(username):
 #legends
 all_legends = [
   ['Bloodhound', 'Season 0',"https://kraber.herokuapp.com/info/legends/Bloodhound/"],
-  ['Bloodhound', 'Season 0',''],
-  ['Gibraltar', 'Season 0'],
-  ['Lifeline', 'Season 0'],
-  ['Pathfinder', 'Season 0'],
+  ['Gibraltar', 'Season 0',"https://kraber.herokuapp.com/info/legends/Gibraltar/"],
+  ['Lifeline', 'Season 0',"https://kraber.herokuapp.com/info/legends/Lifeline/"],
+  ['Pathfinder', 'Season 0',"https://kraber.herokuapp.com/info/legends/Pathfinder/"],
   ['Wraith', 'Season 0'],
   ['Bangalore', 'Season 0'],
   ['Caustic', 'Season 0'],
@@ -100,7 +99,19 @@ def mains():
 
 @app.route('/info/legends/Bloodhound/')
 def Blood():
-  return render_template('blood.html')
+  return render_template('fold-legends/blood.html')
+
+@app.route('/info/legends/Gibraltar/')
+def Gibby():
+  return render_template('fold-legends/gibby.html')
+
+@app.route('/info/legends/Lifeline/')
+def Lifeline():
+  return render_template('fold-legends/lifeline.html')
+
+@app.route('/info/legends/Pathfinder/')
+def Path():
+  return render_template('fold-legends/path.html')
 
 
 if __name__ == '__main__':
