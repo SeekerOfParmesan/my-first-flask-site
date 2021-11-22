@@ -6,44 +6,40 @@ app = Flask(
   static_folder='static'
 )
 
-# Index page (now using the index.html file)
+# home page
 @app.route('/')
 def index():
   return render_template('index.html')
 
 
-#trollos
-@app.route('/admin/<string:name>/')
-def admin(name):
-  return render_template('trolled.html', name=name)
 
-#client
+#Funny meme
 @app.route('/client/<string:username>/')
 def client(username):
   return render_template('client.html', username=username)
 
 
-#legends
+#Dit is een dictonary met lijsten voor legends.html
 all_legends = [
   ['Bloodhound', 'Season 0',"https://kraber.herokuapp.com/info/legends/Bloodhound/"],
   ['Gibraltar', 'Season 0',"https://kraber.herokuapp.com/info/legends/Gibraltar/"],
   ['Lifeline', 'Season 0',"https://kraber.herokuapp.com/info/legends/Lifeline/"],
   ['Pathfinder', 'Season 0',"https://kraber.herokuapp.com/info/legends/Pathfinder/"],
-  ['Wraith', 'Season 0'],
-  ['Bangalore', 'Season 0'],
-  ['Caustic', 'Season 0'],
-  ['Mirage', 'Season 0'],
-  ['Octane', 'Season 1'],
-  ['Wattson', 'Season 2'],
-  ['Crypto', 'Season 3'],
-  ['Revenant', 'Season 4'],
-  ['Loba', 'Season 5'],
-  ['Rampart', 'Season 6'],
-  ['Horizon', 'Season 7'],
-  ['Fuse', 'Season 8'],
-  ['Valkyrie', 'Season 9'],
-  ['Seer', 'Season 10'],
-  ['Ash', 'Season 11']
+  ['Wraith', 'Season 0',"https://kraber.herokuapp.com/info/legends/Wraith/"],
+  ['Bangalore', 'Season 0',"https://kraber.herokuapp.com/info/legends/Bangalore/"],
+  ['Caustic', 'Season 0',"https://kraber.herokuapp.com/info/legends/Caustic/"],
+  ['Mirage', 'Season 0',"https://kraber.herokuapp.com/info/legends/Mirage/"],
+  ['Octane', 'Season 1',"https://kraber.herokuapp.com/info/legends/Octane/"],
+  ['Wattson', 'Season 2',"https://kraber.herokuapp.com/info/legends/Wattson/"],
+  ['Crypto', 'Season 3',"https://kraber.herokuapp.com/info/legends/Crypto/"],
+  ['Revenant', 'Season 4',"https://kraber.herokuapp.com/info/legends/Revanant/"],
+  ['Loba', 'Season 5',"https://kraber.herokuapp.com/info/legends/Loba/"],
+  ['Rampart', 'Season 6',"https://kraber.herokuapp.com/info/legends/Rampart/"],
+  ['Horizon', 'Season 7',"https://kraber.herokuapp.com/info/legends/Horizon/"],
+  ['Fuse', 'Season 8',"https://kraber.herokuapp.com/info/legends/Fuse/"],
+  ['Valkyrie', 'Season 9',"https://kraber.herokuapp.com/info/legends/Valkyrie/"],
+  ['Seer', 'Season 10',"https://kraber.herokuapp.com/info/legends/Seer/"],
+  ['Ash', 'Season 11',"https://kraber.herokuapp.com/info/legends/Ash/"]
 
 
 ]
@@ -52,7 +48,7 @@ all_legends = [
 def leg_ends():
   return render_template('legends.html', all_legends=all_legends)
 
-#guns
+#Dit is een dictonary met lijsten voor guns.html
 all_guns = [
   ['R-301 carbine', 'Light ammo', 'R201'],
   ['P2020', 'Light ammo', 'P2019'],
@@ -113,6 +109,13 @@ def Lifeline():
 def Path():
   return render_template('fold-legends/path.html')
 
+@app.route('/info/legends/Wraith/')
+def Wraith():
+  return render_template('fold-legends/wraith.html')
+
+@app.route('/info/legends/Bangalore/')
+def Bangalore():
+  return render_template('fold-legends/bangalore.html')
 
 if __name__ == '__main__':
   # Run the Flask app

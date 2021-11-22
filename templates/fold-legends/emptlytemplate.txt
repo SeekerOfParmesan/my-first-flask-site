@@ -1,0 +1,26 @@
+<!doctype html>
+<head>
+	<title></title>
+  <link href="/static/style.css" rel="stylesheet" type="text/css">
+</head>
+<body>
+  <p>
+    Abilities
+    <ul>
+      <td>Class:<br>      </td><br>
+      <td>Passive:<br>     </td><br>
+      <td>Tactical ability:<br>      </td><br>
+      <td>Ultimate ability:<br>     </td><br>
+    </ul>
+      
+  </p>
+  <img src=width="500px">
+  <p>This legend came out in season _ and is called .<br>
+ 
+
+</p>
+
+
+
+
+<!-- dit is een blank template zodat ik sneller pagina's kan maken want er staan heel veel gepland -->
