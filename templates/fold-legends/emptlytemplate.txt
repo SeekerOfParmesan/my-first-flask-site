@@ -15,10 +15,9 @@
       
   </p>
   <img src=width="500px">
-  <p>This legend came out in season _ and is called .<br>
+  <div style="width:750px;">This legend came out in season _ and is called .<br>
  
-
-</p>
+  </div>
 
 
 
