@@ -8,14 +8,13 @@
     Abilities
     <ul>
       <td>Class:<br>      </td><br>
-      <td>Passive:<br>     </td><br>
-      <td>Tactical ability:<br>      </td><br>
-      <td>Ultimate ability:<br>     </td><br>
+      <td>Ammo<br>     </td><br>
+      <td>Specialty:<br>      </td><br>
     </ul>
       
   </p>
   <img src=width="500px">
-  <div style="width:750px;">This legend came out in season _ and is called .<br>
+  <div style="width:750px;">This gun is called .<br>
  
   </div>
 

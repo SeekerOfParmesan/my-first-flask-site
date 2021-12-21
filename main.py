@@ -50,33 +50,34 @@ def leg_ends():
 
 #Dit is een dictonary met lijsten voor guns.html
 all_guns = [
-  ['R-301 carbine', 'Light ammo', 'R201'],
-  ['P2020', 'Light ammo', 'P2019'],
-  ['RE-45 auto', 'Light ammo', 'RE-45'],
-  ['R-99', 'Light ammo', 'R-97'],
-  ['G7 scout', 'Carepackage(Light ammo)', 'G7 scout'],
-  ['Alternator', 'Carepackage(Light ammo)', 'Alternator'],
-  ['VK-47 flatline', 'Heavy ammo', 'VK-47 flatline'],
-  ['Rampage', 'Heavy ammo', 'N.A'],
-  ['Prowler burst PDW', 'Heavy ammo', 'N.A'],
-  ['Hemlok burst AR', 'Heavy ammo', 'Hemlok burst AR'],
-  ['Wingman', 'Heavy ammo', 'Wingman'],
-  ['30-30 Repeater', 'Heavy ammo', 'N.A'],
-  ['M600 Spitfire', 'Carepackage(Heavy ammo)', 'M600 Spitfire'],
-  ['Bocek compound bow', 'Arrows', 'N.A'],
-  ['HAVOC Rifle', 'Energy ammo', 'N.A'],
-  ['Devotion LMG', 'Energy ammo', 'Devotion LMG'],
-  ['Volt SMG', 'Energy ammo', 'Volt SMG'],
-  ['L-STAR EMG', 'Energy ammo', 'L-STAR EMG'],
-  ['Triple Take', 'Energy ammo', 'Double Take'],
-  ['EVA-8 Auto', 'Shotgun ammo', 'EVA-8 Auto'],
-  ['Mastiff Shotgun', 'Shotgun ammo', 'Mastiff Shotgun'],
-  ['Mozambique Shotgun', 'Shotgun ammo', 'Mozambique Shotgun'],
-  ['Peacekeaper', 'Shotgun ammo', 'N.A'],
-  ['Charge Rifle', 'Sniper ammo', 'Charge Rifle'],
-  ['Longbow DMR', 'Sniper ammo', 'DMR'],
-  ['Sentinel', 'Sniper ammo', 'N.A'],
-  ['Kraber .50 cal', 'Carepackage(Sniper)', 'Kraber'],
+  ['R-301 carbine', 'Light ammo', 'R201', "https://kraber.herokuapp.com/info/guns/R301/"],
+  ['P2020', 'Light ammo', 'P2019', "https://kraber.herokuapp.com/info/guns/P2020/"],
+  ['RE-45 auto', 'Light ammo', 'RE-45', "https://kraber.herokuapp.com/info/guns/RE45/"],
+  ['R-99', 'Light ammo', 'R-97', "https://kraber.herokuapp.com/info/guns/R99/"],
+  ['G7 scout', 'Carepackage(Light ammo)', 'G7 scout', "https://kraber.herokuapp.com/info/guns/Scout/"],
+  ['Alternator', 'Carepackage(Light ammo)', 'Alternator', "https://kraber.herokuapp.com/info/guns/Alternator/"],
+  ['VK-47 flatline', 'Heavy ammo', 'VK-47 flatline', "https://kraber.herokuapp.com/info/guns/Flatline/"],
+  ['Rampage', 'Heavy ammo', 'N.A', "https://kraber.herokuapp.com/info/guns/Rampage/"],
+  ['Prowler burst PDW', 'Heavy ammo', 'N.A', "https://kraber.herokuapp.com/info/guns/Prowler/"],
+  ['CAR smg', 'Heavy/light ammo', 'CAR SMG', "https://kraber.herokuapp.com/info/guns/CAR/"],
+  ['Hemlok burst AR', 'Heavy ammo', 'Hemlok burst AR', "https://kraber.herokuapp.com/info/guns/Hemlok/"],
+  ['Wingman', 'Heavy ammo', 'Wingman', "https://kraber.herokuapp.com/info/guns/Wingman/"],
+  ['30-30 Repeater', 'Heavy ammo', 'N.A', "https://kraber.herokuapp.com/info/guns/3030/"],
+  ['M600 Spitfire', 'Carepackage(Heavy ammo)', 'M600 Spitfire', "https://kraber.herokuapp.com/info/guns/Spitfire/"],
+  ['Bocek compound bow', 'Arrows', 'N.A', "https://kraber.herokuapp.com/info/guns/Bocek/"],
+  ['HAVOC Rifle', 'Energy ammo', 'N.A', "https://kraber.herokuapp.com/info/guns/HAVOC/"],
+  ['Devotion LMG', 'Energy ammo', 'Devotion LMG', "https://kraber.herokuapp.com/info/guns/Devotion/"],
+  ['Volt SMG', 'Energy ammo', 'Volt SMG', "https://kraber.herokuapp.com/info/guns/Volt/"],
+  ['L-STAR EMG', 'Energy ammo', 'L-STAR EMG', "https://kraber.herokuapp.com/info/guns/Lstar/"],
+  ['Triple Take', 'Energy ammo', 'Double Take', "https://kraber.herokuapp.com/info/guns/Triple/"],
+  ['EVA-8 Auto', 'Shotgun ammo', 'EVA-8 Auto', "https://kraber.herokuapp.com/info/guns/EVA/"],
+  ['Mastiff Shotgun', 'Shotgun ammo', 'Mastiff Shotgun', "https://kraber.herokuapp.com/info/guns/Mastiff/"],
+  ['Mozambique Shotgun', 'Shotgun ammo', 'Mozambique Shotgun', "https://kraber.herokuapp.com/info/guns/Mozambique/"],
+  ['Peacekeaper', 'Shotgun ammo', 'N.A', "https://kraber.herokuapp.com/info/guns/Peacekeeper/"],
+  ['Charge Rifle', 'Sniper ammo', 'Charge Rifle', "https://kraber.herokuapp.com/info/guns/Charge/"],
+  ['Longbow DMR', 'Sniper ammo', 'DMR', "https://kraber.herokuapp.com/info/guns/Longbow/"],
+  ['Sentinel', 'Sniper ammo', 'N.A', "https://kraber.herokuapp.com/info/guns/Sentinel/"],
+  ['Kraber .50 cal', 'Carepackage(Sniper)', 'Kraber', "https://kraber.herokuapp.com/info/guns/Kraber/"],
 ]
 @app.route('/info/guns/')
 def guns():
@@ -116,6 +117,166 @@ def Wraith():
 @app.route('/info/legends/Bangalore/')
 def Bangalore():
   return render_template('fold-legends/bangalore.html')
+
+@app.route('/info/legends/Mirage/')
+def mirage():
+  return render_template('fold-legends/mirage.html')
+
+@app.route('/info/legends/Octane/')
+def Octane():
+  return render_template('fold-legends/octane.html')
+
+@app.route('/info/legends/Wattson/')
+def Wattson():
+  return render_template('fold-legends/wattson.html')
+
+@app.route('/info/legends/Crypto/')
+def crypto():
+  return render_template('fold-legends/crypto.html')
+
+@app.route('/info/legends/Revenant/')
+def Rev():
+  return render_template('fold-legends/revenant.html')
+  
+@app.route('/info/legends/Loba/')
+def loba():
+  return render_template('fold-legends/loba.html')
+
+@app.route('/info/legends/Rampart/')
+def rampart():
+  return render_template('fold-legends/rampart.html')
+
+@app.route('/info/legends/Horizon/')
+def Horizon():
+  return render_template('fold-legends/horizon.html')
+
+@app.route('/info/legends/Fuse/')
+def fuse():
+  return render_template('fold-legends/fuse.html')
+
+@app.route('/info/legends/Valkyrie/')
+def Valk():
+  return render_template('fold-legends/valk.html')
+
+@app.route('/info/legends/Seer/')
+def seer():
+  return render_template('fold-legends/seer.html')
+
+@app.route('/info/legends/Ash/')
+def ash():
+  return render_template('fold-legends/ash.html')
+
+#-------------------------------------------------
+#hier starten de gun htmls
+
+@app.route('/info/guns/R301/')
+def r3():
+  return render_template('fold-guns/r301.html')
+
+@app.route('/info/guns/P2020/')
+def p20():
+  return render_template('fold-guns/p20.html')
+
+@app.route('/info/guns/RE45/')
+def re45():
+  return render_template('fold-guns/re45.html')
+
+@app.route('/info/guns/R99/')
+def r9():
+  return render_template('fold-guns/r9.html')
+
+@app.route('/info/guns/Scout/')
+def g7():
+  return render_template('fold-guns/g7.html')
+
+@app.route('/info/guns/Alternator/')
+def alt():
+  return render_template('fold-guns/alt.html')
+
+@app.route('/info/guns/Flatline/')
+def flatline():
+  return render_template('fold-guns/flatline.html')
+
+@app.route('/info/guns/Rampage/')
+def rampage():
+  return render_template('fold-guns/rampage.html')
+
+@app.route('/info/guns/Prowler/')
+def PDW():
+  return render_template('fold-guns/PDW.html')
+
+@app.route('/info/guns/Hemlok/')
+def hemlok():
+  return render_template('fold-guns/hemlok.html')
+
+@app.route('/info/guns/Wingman/')
+def wingman():
+  return render_template('fold-guns/wingman.html')
+
+@app.route('/info/guns/3030/')
+def repeater():
+  return render_template('fold-guns/repeater.html')
+
+@app.route('/info/guns/Spitfire/')
+def spitfire():
+  return render_template('fold-guns/spitfire.html')
+
+@app.route('/info/guns/Bocek/')
+def bow():
+  return render_template('fold-guns/bow.html')
+
+@app.route('/info/guns/HAVOC/')
+def havoc():
+  return render_template('fold-guns/havoc.html')
+
+@app.route('/info/guns/Devotion/')
+def devo():
+  return render_template('fold-guns/devo.html')
+
+@app.route('/info/guns/Volt/')
+def volt():
+  return render_template('fold-guns/volt.html')
+
+@app.route('/info/guns/Lstar/')
+def EMG():
+  return render_template('fold-guns/EMG.html')
+
+@app.route('/info/guns/Triple/')
+def take():
+  return render_template('fold-guns/take.html')
+
+@app.route('/info/guns/EVA/')
+def aa12():
+  return render_template('fold-guns/aa12.html')
+
+@app.route('/info/guns/Mastiff/')
+def mastiff():
+  return render_template('fold-guns/mastiff.html')
+
+@app.route('/info/guns/Mozambique/')
+def mozam():
+  return render_template('fold-guns/mozam.html')
+
+@app.route('/info/guns/Peacekeeper')
+def pk():
+  return render_template('fold-guns/pk.html')
+
+@app.route('/info/guns/Charge/')
+def charge():
+  return render_template('fold-guns/charge.html')
+
+@app.route('/info/guns/Longbow/')
+def DMR():
+  return render_template('fold-guns/DMR.html')
+
+@app.route('/info/guns/Sentinel/')
+def sentinel():
+  return render_template('fold-guns/sentinel.html')
+
+@app.route('/info/guns/Kraber/')
+def kraber():
+  return render_template('fold-guns/kraber.html')
+
 
 if __name__ == '__main__':
   # Run the Flask app
