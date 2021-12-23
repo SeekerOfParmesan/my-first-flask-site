@@ -277,6 +277,10 @@ def sentinel():
 def kraber():
   return render_template('fold-guns/kraber.html')
 
+@app.route('/info/guns/Car/')
+def car():
+  return render_template('fold-guns/car.html')
+
 
 if __name__ == '__main__':
   # Run the Flask app

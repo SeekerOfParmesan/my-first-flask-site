@@ -7,14 +7,17 @@
   <p>
     Abilities
     <ul>
-      <td>Class:<br>      </td><br>
-      <td>Ammo<br>     </td><br>
-      <td>Specialty:<br>      </td><br>
+      <td>Class:     </td><br>
+      <td>Ammo:     </td><br>
+      <td>Specialty:      </td><br>
+      <td>Base Damage:    </td><br>
+      <td>Reload speed:   Tactical: | non tactical:  </td><br>
+      <td>RPM:    </td><br>
     </ul>
       
   </p>
   <img src=width="500px">
-  <div style="width:750px;">This gun is called .<br>
+  <div style="width:750px;">This gun is called a .<br>
  
   </div>
 
