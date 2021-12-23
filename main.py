@@ -32,7 +32,7 @@ all_legends = [
   ['Octane', 'Season 1',"https://kraber.herokuapp.com/info/legends/Octane/"],
   ['Wattson', 'Season 2',"https://kraber.herokuapp.com/info/legends/Wattson/"],
   ['Crypto', 'Season 3',"https://kraber.herokuapp.com/info/legends/Crypto/"],
-  ['Revenant', 'Season 4',"https://kraber.herokuapp.com/info/legends/Revanant/"],
+  ['Revenant', 'Season 4',"https://kraber.herokuapp.com/info/legends/Revenant/"],
   ['Loba', 'Season 5',"https://kraber.herokuapp.com/info/legends/Loba/"],
   ['Rampart', 'Season 6',"https://kraber.herokuapp.com/info/legends/Rampart/"],
   ['Horizon', 'Season 7',"https://kraber.herokuapp.com/info/legends/Horizon/"],
