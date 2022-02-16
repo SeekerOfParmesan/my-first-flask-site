@@ -13,10 +13,6 @@ def index():
 
 
 
-#Funny meme
-@app.route('/client/<string:username>/')
-def client(username):
-  return render_template('client.html', username=username)
 
 
 #Dit is een dictonary met lijsten voor legends.html
